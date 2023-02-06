@@ -441,5 +441,5 @@
 @{Algorithm=MD5; Hash=613061F30BD4A24D49DCAEF9BB6C3EEB; Path=C:\Users\bakra\Desktop\Hashme\ruler_4\node_modules\wildcard\.travis.yml}
 @{Algorithm=MD5; Hash=032E77FEA143255B9A2885C5BE2BFAE6; Path=C:\Users\bakra\Desktop\Hashme\ruler_4\node_modules\winreg\.npmignore}
 @{Algorithm=MD5; Hash=CD421770193542137080F7B035F91F3D; Path=C:\Users\bakra\Desktop\Hashme\ruler_4\node_modules\zip-a-folder\.travis.yml}
-@{Algorithm=MD5; Hash=D224E9EE32F3E81D6B364E7D9CC8AF54; Path=C:\Users\bakra\Desktop\Hashme\ruler_4\node_modules\.package-lock.json}
+@{Algorithm=MD5; Hash=2E0EF495306A4FCC6A63CF781E322C79; Path=C:\Users\bakra\Desktop\Hashme\ruler_4\node_modules\.package-lock.json}
 @{Algorithm=MD5; Hash=9E239810CB62F0B4BF05D9905DE99C5C; Path=C:\Users\bakra\Desktop\Hashme\ruler_4\.eslintrc.json}
