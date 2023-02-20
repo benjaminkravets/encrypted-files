@@ -7,6 +7,7 @@
 # import required module
 from cryptography.fernet import Fernet
 import os
+import glob
 
 # key generation
 key = Fernet.generate_key()
@@ -14,8 +15,8 @@ key = Fernet.generate_key()
 from pathlib import Path
 
 mydir = Path("mel")
-for filename in mydir.glob('*.csv'):
-    print(filename.name)
+for filename in glob.glob('C:/Users/bkravets/Documents/encrypted-files/mel', recursive=True):
+    print(filename)
     # do your stuff
 
 
@@ -57,7 +58,7 @@ input("Continue to decryption")
 # using the key
 fernet = Fernet(key)
  
-for filename in mydir.glob('*.csv'):
+for filename in mydir.glob('mel/**/*.csv', recursive=True):
     print(filename.name)
     # do your stuff
 
