@@ -15,7 +15,7 @@ key = Fernet.generate_key()
 from pathlib import Path
 
 mydir = Path("mel")
-for filename in glob.glob('C:/Users/bkravets/OneDrive - PASEN/Desktop/encrypted-files/mel/**/*.csv', 
+for filename in glob.glob('C:/Users/bkravets/OneDrive - PASEN/Desktop/encrypted-files/mel/**/*.*', 
                    recursive = True):
     print(filename)
     # do your stuff
@@ -60,7 +60,7 @@ input("Continue to decryption")
 # using the key
 fernet = Fernet(key)
  
-for filename in glob.glob('C:/Users/bkravets/OneDrive - PASEN/Desktop/encrypted-files/mel/**/*.csv', 
+for filename in glob.glob('C:/Users/bkravets/OneDrive - PASEN/Desktop/encrypted-files/mel/**/*.*', 
                    recursive = True):
     print(filename)
     # do your stuff
