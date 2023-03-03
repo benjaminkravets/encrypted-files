@@ -8,14 +8,14 @@
 from cryptography.fernet import Fernet
 import os
 import glob
-
+import sys
 # key generation
 key = Fernet.generate_key()
 
 from pathlib import Path
 
 mydir = Path("mel")
-for filename in glob.glob('C:/Users/bkravets/Documents/encrypted-files/mel/**/*.*', 
+for filename in glob.glob('C:/Users/bkravets/Desktop/encrypted-files/mel/**/*.py', 
                    recursive = True):
     print(filename)
     # do your stuff
@@ -49,7 +49,10 @@ for filename in glob.glob('C:/Users/bkravets/Documents/encrypted-files/mel/**/*.
 #   pause
 #
 
-input("Continue to decryption")
+decrypting = input("Continue to decryption? ")
+
+if(decrypting == "no"):
+    sys.exit("1")
 
 #
 #   Decrypt
@@ -59,8 +62,8 @@ input("Continue to decryption")
 
 # using the key
 fernet = Fernet(key)
- 
-for filename in glob.glob('C:/Users/bkravets/Documents/encrypted-files/mel/**/*.*', 
+
+for filename in glob.glob('C:/Users/bkravets/Desktop/encrypted-files/mel/**/*.py', 
                    recursive = True):
     print(filename)
     # do your stuff
