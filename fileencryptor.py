@@ -15,11 +15,10 @@ key = Fernet.generate_key()
 from pathlib import Path
 
 mydir = Path("mel")
-for filename in glob.glob('C:/Users/bkravets/Desktop/encrypted-files/mel/**/*.py', 
+for filename in glob.glob('C:/Users/bakra/Desktop/encrypted-files/mel/**/.*', 
                    recursive = True):
     print(filename)
     # do your stuff
-
 
 
 # string the key in a file
@@ -63,7 +62,7 @@ if(decrypting == "no"):
 # using the key
 fernet = Fernet(key)
 
-for filename in glob.glob('C:/Users/bkravets/Desktop/encrypted-files/mel/**/*.py', 
+for filename in glob.glob('C:/Users/bakra/Desktop/encrypted-files/mel/**/.*', 
                    recursive = True):
     print(filename)
     # do your stuff
